@@ -27,7 +27,7 @@ function validatePostcode() {
     if (postcodeRegex.test(postcodeInput.value)) {
         postcodeResult.textContent = "Valid postcode!";
     } else {
-        postcodeResult.textContent = "Invalid postcode. Use a valid format";
+        postcodeResult.textContent = "Invalid postcode. Use a valid format in 4 digit";
     }
 }
 
