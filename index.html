@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form onsubmit="return false;">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" required>
+            <button type="button" onclick="validateName()">Validate Name</button>
+            <p id="nameResult"></p>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required>
+            <button type="button" onclick="validateEmail()">Validate Email</button>
+            <p id="emailResult"></p>
+        </div>
+        <div>
+            <label for="postcode">Postcode: </label>
+            <input type="text" id="postcode" required>
+            <button type="button" onclick="validatePostcode()">Validate Postcode</button>
+            <p id="postcodeResult"></p>
+        </div>
+        <div>
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" required>
+            <button type="button" onclick="validatePhone()">Validate Phone</button>
+            <p id="phoneResult"></p>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
